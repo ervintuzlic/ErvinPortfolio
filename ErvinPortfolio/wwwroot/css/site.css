@@ -27,16 +27,17 @@ footer {
     font-weight:500;
     margin-left: 20px;
     margin-right:20px;
+    width:100%;
+    text-align:center;
     opacity: 1;
     transition: 0.2s;
 }
 #linav {
     transition: 0.2s;
 }
-#neki:hover{
+#neki:hover {
     color: white;
     font-weight: 700;
-}
-#linav:hover {
-    border-bottom: 1px white solid;
+    background-color: #0B5ED7;
+    border-radius: 8px;
 }
