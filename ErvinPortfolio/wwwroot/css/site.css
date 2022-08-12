@@ -20,3 +20,23 @@ footer {
     white-space: nowrap;
     line-height: 60px;
 }
+
+#neki {
+    font-size: 17px;
+    color: white;
+    font-weight:500;
+    margin-left: 20px;
+    margin-right:20px;
+    opacity: 1;
+    transition: 0.2s;
+}
+#linav {
+    transition: 0.2s;
+}
+#neki:hover{
+    color: white;
+    font-weight: 700;
+}
+#linav:hover {
+    border-bottom: 1px white solid;
+}
