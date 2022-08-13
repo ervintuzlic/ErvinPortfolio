@@ -43,3 +43,42 @@ footer {
     background-color: #0B5ED7;
     border-radius: 8px;
 }
+
+#ProjectFile {
+    border: 1px #191919 solid;
+    transition: 0.2s;
+}
+
+#ProjectFile:hover {
+    background-color: #191919;
+    border: 2px solid #0B5ED7;
+}
+
+#ProjectFile:hover img{
+    opacity:0.4;
+}
+
+#ProjectFile:hover .card-body{
+    opacity:0.4;
+}
+
+#buttonProject {
+    width: 180px;
+    font-size: 24px;
+    font-weight: 500;
+    height: 60px;
+    position: absolute;
+    left: 29%;
+    top: 40%;
+    opacity: 0;
+    border: 1px #0B5ED7 solid;
+    transition: 0.2s;
+}
+    #buttonProject:hover {
+        font-size: 26px;
+        box-shadow: 10px 10px;
+    }
+
+#ProjectFile:hover button {
+    opacity:1;
+}

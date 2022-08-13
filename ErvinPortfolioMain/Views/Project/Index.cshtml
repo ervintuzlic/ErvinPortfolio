@@ -1,0 +1,16 @@
+﻿@model IEnumerable<ErvinPortfolio.Models.Project>
+
+<div class="row mt-4" style="justify-content:center;">
+	@foreach(var project in Model)
+	{
+		<div id="ProjectFile" class="card col-sm-4" style="margin:20px;padding:0;">
+					<img id="ProjectSlika" src="@project.ImageUrl" />
+					<button id="buttonProject" type="submit" class="btn btn-primary">Read More</button>
+					<div class="card-body" style="background-color: #0d6efd;">
+						<div class="pl-1">
+							<h1 style="text-align:center;color:white;" class="card-title h4">@project.Name</h1>
+						</div>
+					</div>
+		</div>
+	}
+</div>
