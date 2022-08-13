@@ -17,6 +17,11 @@ namespace ErvinPortfolioWeb.Controllers
             _logger = logger;
             _unitOfWork = unitOfWork;
         }
+        public IActionResult Details(int id)
+        {
+            Project project = _unitOfWork.Project.GetFirstOrDefault(u => u.Id == id);
+            return View(project);
+        }
 
         public IActionResult Index()
         {
