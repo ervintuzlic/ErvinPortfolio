@@ -19,7 +19,18 @@ namespace ErvinPortfolio.DataAccess.Repository
 
         public void Update(Project obj)
         {
-            _db.Projects.Update(obj);
+            var objFromDb = _db.Projects.FirstOrDefault(p => p.Id == obj.Id);
+
+            if (objFromDb != null)
+            {
+                objFromDb.Name = obj.Name;
+                objFromDb.Description = obj.Description;
+            }
+
+            if(obj.ImageUrl != null)
+            {
+                objFromDb.ImageUrl = obj.ImageUrl;
+            }
         }
     }
 }

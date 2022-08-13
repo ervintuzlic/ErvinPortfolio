@@ -1,0 +1,45 @@
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+html, body {
+    min-height: 100%;
+    height: 100%;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    white-space: nowrap;
+    line-height: 60px;
+}
+
+#neki {
+    font-size: 17px;
+    color: white;
+    font-weight: 500;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 100%;
+    text-align: center;
+    opacity: 1;
+    transition: 0.2s;
+}
+
+#linav {
+    transition: 0.2s;
+}
+
+#neki:hover {
+    color: white;
+    font-weight: 700;
+    background-color: #0B5ED7;
+    border-radius: 8px;
+}
