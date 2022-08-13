@@ -77,7 +77,7 @@ footer {
 }
     #buttonProject:hover {
         font-size: 26px;
-        box-shadow: 10px 10px;
+        box-shadow: white 10px 10px;
     }
 
 #ProjectFile:hover a {

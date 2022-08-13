@@ -1,6 +1,8 @@
 ﻿@model IEnumerable<ErvinPortfolio.Models.Project>
 
+<div class="row">
 <div class="row mt-4" style="justify-content:center;">
+	<h1 class="text-primary mt-2" style="text-align:center;font-weight:700;padding-bottom:1%;">PROJECTS</h1>
 	@foreach(var project in Model)
 	{
 		<div id="ProjectFile" class="card col-sm-4" style="margin:20px;padding:0;">
@@ -13,4 +15,5 @@
 					</div>
 		</div>
 	}
+</div>
 </div>
