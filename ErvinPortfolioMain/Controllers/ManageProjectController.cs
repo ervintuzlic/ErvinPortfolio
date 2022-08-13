@@ -92,6 +92,28 @@ namespace ErvinPortfolioWeb.Controllers
             var productList = _unitOfWork.Project.GetAll();
             return Json(new { data = productList });
         }
+
+        [HttpDelete]
+        public IActionResult Delete(int? id)
+        {
+            var obj = _unitOfWork.Project.GetFirstOrDefault(u => u.Id == id);
+
+            if (obj == null)
+            {
+                return Json(new { success = false, message = "Error while deleting!" });
+            }
+
+            var oldImagePath = Path.Combine(_webHostEnvironment.WebRootPath, obj.ImageUrl.TrimStart('\\'));
+            if (System.IO.File.Exists(oldImagePath))
+            {
+                System.IO.File.Delete(oldImagePath);
+            }
+            _unitOfWork.Project.Remove(obj);
+            _unitOfWork.Save();
+
+            return Json(new { success = true, message = "Delete Successful!" });
+
+        }
         #endregion
     }
 }
